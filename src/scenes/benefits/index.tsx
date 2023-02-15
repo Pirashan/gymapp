@@ -43,7 +43,6 @@ const container = {
   
   const Benefits = ({ setSelectedPage }: Props) => {
     return (
-        <div className="bg-gray-20">
       <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
         <motion.div
           onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
@@ -151,7 +150,6 @@ const container = {
           </div>
         </motion.div>
       </section>
-      </div>
     );
   };
   

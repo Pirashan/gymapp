@@ -18,12 +18,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (e: any) => {
-    const isValid = await trigger();
-    if (!isValid) {
-      e.preventDefault();
-    }
-  };
+//   const onSubmit = async (e: any) => {
+//     const isValid = await trigger();
+//     if (!isValid) {
+//       e.preventDefault();
+//     }
+//   };
 
   return (
     <div className="">
@@ -66,12 +66,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <form
+            {/* <form
               target="_blank"
               onSubmit={onSubmit}
               action="https://formsubmit.co/pirashan99@gmail.com"
               method="POST"
-            >
+            > */}
               <input
                 className={inputStyles}
                 type="text"
@@ -131,7 +131,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               >
                 SUBMIT
               </button>
-            </form>
+            {/* </form> */}
           </motion.div>
 
           <motion.div
